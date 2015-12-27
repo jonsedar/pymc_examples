@@ -1,0 +1,17 @@
+name: pymc_examples
+dependencies:
+- python=3.4
+- ipython
+- ipython-notebook
+- ipython-qtconsole
+- numpy
+- scipy
+- matplotlib
+- pandas
+- pytables
+- scikit-learn
+- statsmodels
+- seaborn
+- patsy
+- requests
+- pip

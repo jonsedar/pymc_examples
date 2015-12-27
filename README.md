@@ -1,0 +1,61 @@
+# PyMC Examples
+
+_Personal Project for PyMC Development_
+
+
+A set of notebooks intended to demo some capabilities of nonparametric Bayesian
+analysis using Python tools. In particular the `pymc3` and `emcee` toolkits.
+
+
+## Development:
+
+### Git clone the repo to your workspace.
+
+e.g. in Mac OSX terminal:
+
+        $> git clone https://{usr}@github.org/pymc_examples.git
+        $> cd pymc_examples
+
+
+
+### Setup a virtual environment for Python libraries
+
+**NOTE:** using Python 3.4
+
+Using Anaconda distro,
+
+1. create a new virtual env, installing packages from env YAML file:
+
+
+        $> conda env create --file conda_env_mac.yml
+        $> source activate pymc_examples
+
+
+
+2. install latest builds of pymc3 and theano dev via pip:
+
+        $> pip install --process-dependency-links git+https://github.com/pymc-devs/pymc3
+
+        $> Successfully installed Theano-0.7.0 pymc3-3.0
+
+---
+
+
+
+## Data
+
+Local data is not stored in the repo, and should be manually copied into the subdirectory data/
+
+See file `data/README_DATA.md` for more info
+
+
+---
+
+
+## General Notes:
+
+File `find_MAP_HACK.py` contains customised `find_MAP()` function to correct
+for pymc3's default behaviour of computing gradients when the chosen optimizer
+doesn't use them. We don't want to compute gradients in large datasets because it's
+quite computationally expensive.
+
