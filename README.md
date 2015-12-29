@@ -13,7 +13,7 @@ analysis using Python tools. In particular the `pymc3` and `emcee` toolkits.
 
 e.g. in Mac OSX terminal:
 
-        $> git clone https://{usr}@github.org/pymc_examples.git
+        $> git clone https://github.com/jonsedar/pymc_examples.git
         $> cd pymc_examples
 
 
@@ -27,7 +27,7 @@ Using Anaconda distro,
 1. create a new virtual env, installing packages from env YAML file:
 
 
-        $> conda env create --file conda_env_mac.yml
+        $> conda env create --file conda_env_pymc_examples.yml
         $> source activate pymc_examples
 
 
@@ -36,7 +36,6 @@ Using Anaconda distro,
 
         $> pip install --process-dependency-links git+https://github.com/pymc-devs/pymc3
 
-        $> Successfully installed Theano-0.7.0 pymc3-3.0
 
 ---
 
@@ -55,7 +54,8 @@ See file `data/README_DATA.md` for more info
 ## General Notes:
 
 File `find_MAP_HACK.py` contains customised `find_MAP()` function to correct
-for pymc3's default behaviour of computing gradients when the chosen optimizer
-doesn't use them. We don't want to compute gradients in large datasets because it's
-quite computationally expensive.
+for pymc3's default behaviour of computing gradients even when the chosen
+optimizer doesn't use them. We don't want to compute gradients in large
+datasets because it's computationally expensive.
+This is a temporary hack before I try to fix properly.
 
