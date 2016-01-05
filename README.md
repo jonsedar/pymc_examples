@@ -37,6 +37,12 @@ Using Anaconda distro,
         $> pip install --process-dependency-links git+https://github.com/pymc-devs/pymc3
 
 
+3. install emcee via pip
+
+        $> pip install emcee
+
+
+
 ---
 
 
