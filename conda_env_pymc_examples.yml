@@ -1,12 +1,11 @@
 name: pymc_examples
 dependencies:
-- python=3.4
-- ipython
-- ipython-notebook
-- ipython-qtconsole
+- python=3.5
+- jupyter
+- ipywidgets
 - numpy
 - scipy
-- matplotlib
+- matplotlib=1.4.3
 - pandas
 - pytables
 - scikit-learn
