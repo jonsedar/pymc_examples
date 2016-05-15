@@ -20,7 +20,7 @@ e.g. in Mac OSX terminal:
 
 ### Setup a virtual environment for Python libraries
 
-**NOTE:** using Python 3.4
+**NOTE:** using Python 3.5
 
 Using Anaconda distro,
 

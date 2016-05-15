@@ -5,7 +5,7 @@ dependencies:
 - ipywidgets
 - numpy
 - scipy
-- matplotlib=1.4.3
+- matplotlib
 - pandas
 - pytables
 - scikit-learn
